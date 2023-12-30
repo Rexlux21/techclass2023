@@ -1,8 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
-
+    <meta charset="utf-8"/>
+    <Meta name="viewport"content="width=device-width,initial-scale-1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>PIERRE FIRST WEBSITE</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<!--body start here-->
 <body>
-<h1> Hello World this Pierre first code yeah<h1/>
-<body/
-</html>
+  <!--header start here--> 
+    <div class="header">
+      <h1 style="text-align:center;">AUGUSMA PIERRE ERNEST</h1>
+    </div>
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#">Projects</a>
+      <a href="#"></a>
+      <a href="#" class="right"></a>
+    </div>
+    <div class="row">
+      </div>
+      <div class="side">
+        <!--description about me-->
+        </div>
+        <h2 style="text-align: center;">About Me:</h2>
+        <p stye="text-align:center"><b>I am a software developer and I develop in the language of HTML</b> </p>
+        <img src="pierre.jpg"alt="pierre" width="400" height="400px">
+        <br/>
+        <div class="guitar: style="height:60px;">I like to play guitar</div><br>
+        <img src="guitar01.jpg" alt guitar>
+        <br/>
+        <div class="cod"style="height:60px;">I like to learn code</div><br>
+        <br></br>
+          <img src="code.jpg" alt="code">
+          <br>
+       <div class="paint" style="height:20px;">And Paint</div><br>
+        <img src="paints.jpg" alt="paints" width="200px">
+      </div><br>
+        <br></br>
+<h4>Nelson Mandela quote:</h4>
+ <blockquote>
+        <p>One of my favorite quotes form Nelson Mandela is </blockquote></p>
+        <cite><a href="#!"><q>A winner is a dreamer who never gives up.</q></p></a></cite>
+</blockquote>
+        <img src="nelson (1).jpg"alt=" Mandela"style="float:right" >
+          <!--next we have our paragraphs-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Interdum consectetur libero id faucibus nisl. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Tortor posuere ac ut consequat. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit.<br></br> At elementum eu facilisis sed odio morbi quis commodo. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Risus nec feugiat in fermentum posuere urna nec tincidunt. Nulla facilisi nullam vehicula ipsum a. Id leo in vitae turpis. Risus nullam eget felis eget nunc lobortis mattis aliquam. Arcu non odio euismod lacinia. Non diam phasellus vestibulum lorem sed risus. Cras semper auctor neque vitae. Morbi tincidunt ornare massa eget. Lorem ipsum dolor sit amet consectetur. Enim tortor at auctor urna nunc id cursus metus.
+            Donec pretium vulputate sapien nec sagittis aliquam. Ultricies leo integer malesuada nunc vel risus commodo. Nunc lobortis mattis aliquam faucibus purus. Urna nec tincidunt praesent semper feugiat nibh sed. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Elementum nisi quis eleifend quam adipiscing vitae proin. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Lorem ipsum dolor sit amet consectetur adipiscing elit. Cursus eget nunc scelerisque viverra mauris. Auctor urna nunc id cursus metus aliquam eleifend mi in. Mi quis hendrerit dolor magna eget est lorem ipsum. Purus ut faucibus pulvinar elementum. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Senectus et netus et malesuada fames. </p>
+        <div>
+          <p>hiLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dis parturient montes nascetur ridiculus mus mauris. Massa massa ultricies mi quis hendrerit dolor. Risus viverra adipiscing at in tellus integer feugiat. Nam aliquam sem et tortor consequat id porta nibh. At volutpat diam ut venenatis tellus in metus. Scelerisque varius morbi enim nunc faucibus a pellentesque. Orci porta non pulvinar neque laoreet suspendisse interdum. Odio pellentesque diam volutpat commodo sed. Rutrum quisque non tellus orci. Non quam lacus suspendisse faucibus interdum posuere. Tempor orci dapibus ultrices in iaculis nunc. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Congue quisque egestas diam in arcu cursus euismod quis. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Sed faucibus turpis in eu mi bibendum neque. Ullamcorper malesuada proin libero nunc consequat interdum varius. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. </P>
+      </div>
+      <!--this is the footer-->
+     <div class="footer">
+      <h2>copyrights 2023</h2>
+    </div>      
+</body>
+</html>    
