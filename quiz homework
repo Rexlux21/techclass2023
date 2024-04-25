@@ -1,0 +1,14 @@
+# the program ask for the user  name
+ask_name= input("what is your name? ")
+print ("welcome",ask_name, "to the quiz")
+Are_you_ready= input("Are you ready? ")
+# question one
+print("1) What keyword is used to create a variable ?")
+answer_1=input("a).....,b)......")
+if answer_1 == "a" :
+    print("correct")
+    
+else:
+    print("wrong, the answer is ")
+# question two
+print("2) what is .....")
