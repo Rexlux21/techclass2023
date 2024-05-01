@@ -1,0 +1,101 @@
+#the programm ask the user for thir name
+ask_name= input("what is your name? ")
+print("welcome", ask_name, " to the quiz")
+# now i ask the user question one
+# Define the multiple-choice question and options
+print("1- What keyword is used to create a variable?")
+option1=["A) var ", "B)let ", "C) int", "D) no keyword is needed"]
+print(option1)
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="D"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is D, No keyword needed")
+        # question 2 
+print ("2.	How do you create a list containing the numbers 1, 2, 3, and 3? ")
+options2 = ["A)list =1,2,3 ", "B) list ={1,2,3}", "C)list=(1,2,3) ", "D)list=[1,2,3] "]
+print(options2)
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="D"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is D,list=[1,2,3] ")   
+        #question 3
+print ("3.Which method add an item to the  end of a list? ")
+options3 = ["A)append() ", "B)add() ", "C)push() ", "D)put()"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="A"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is A,append() ")
+        #question 4
+print ("4.what does len () function return?")
+options4 = ["A)the length of an object ", "B)the size of in bytes of the objects ", "C)The first item in an object", "D)the last item in an object"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="A"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is A) the length of an object ")
+    #question 5
+print ("5.which operator is used to multiply?")
+options5 = ["A)+", "B)-", "C)*", "D)/"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="C"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is C, * ")
+    #Question 6
+print ("6- How do you access the first element of a list named my list?")
+options6 = ["A)my list(0) ", "B)", "C)", "D)"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="C"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is : C) my_list[0]")
+    # Question 7
+print ("7.What keyword is used to check if a value is equal to another in a condition? ")
+options7 = ["A)= ", "B)==", "C)===", "D)!="]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="B"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is :B,== ")
+        # question 8
+print ("8.Which keyword is used to start a while loop in python?")
+options8 = ["A)while ", "B)loop", "C)repeat", "D)for"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="A"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is : A, while")
+        #question 9
+print ("9.What is the correct way to declare a comment in Python?")
+options9 = ["A)// This is a comment ", "B)<!--This a comment-->", "C)# This a comment", "D)/*This a comment*/"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="C"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is :C) # This is a comment ")
+        #question 10
+print ("10.How do you convert the integer '123' to a string in Python? .")
+options10 = ["A)str(1,2,3) ", "B)string (1,2,3)", "C)concert (123)", "D)tolint(1,2,3)"]
+user_answer = input("Enter your answer (A, B, C, or D): ")
+correct_answer="A"
+if user_answer == correct_answer:
+        print("Correct!")
+else:
+        print("Incorrect. The correct answer is :A) str(123)")
+        
+
+
+
+
