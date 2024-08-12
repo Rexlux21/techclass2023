@@ -1,0 +1,44 @@
+To calculate the total cost for a customer, including tax, and to generate a receipt for their purchase, you can follow these steps in Python. I will create a simple script to:
+
+1. Add items to the customer's purchase.
+2. Calculate the subtotal.
+3. Apply sales tax.
+4. Generate and print a receipt.
+
+
+# Item descriptions and prices
+Lovely_Loveseat_description = "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white."
+Lovely_Loveseat_price = 254.00
+
+stylish_settee_description = "Stylish settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black."
+stylish_settee_price = 180.50
+
+Luxurious_lamp_description = "Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."
+Luxurious_lamp_price = 52.15
+
+sales_tax = 0.088  # 8.8%
+
+# Initialize customer details
+customer_one_total = 0
+customer_one_itemization = ""
+
+# Items purchased by customer one
+items_purchased = [
+    {"description": Lovely_Loveseat_description, "price": Lovely_Loveseat_price},
+    {"description": stylish_settee_description, "price": stylish_settee_price},
+    {"description": Luxurious_lamp_description, "price": Luxurious_lamp_price}
+]
+
+# Calculate total and itemization
+for item in items_purchased:
+    customer_one_total += item["price"]
+    customer_one_itemization += f"{item['description']} - ${item['price']:.2f}\n"
+
+# Calculate tax and final total
+tax_amount = customer_one_total * sales_tax
+final_total = customer_one_total + tax_amount
+
+# Generate receipt
+receipt = f"Receipt:\n\n{customer_one_itemization}\nSales Tax: ${tax_amount:.2f}\nTotal: ${final_total:.2f}"
+
+print(receipt)
