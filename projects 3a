@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>
+        Project 2: Using Boxes
+      </title>
+      <style>
+        body {
+      padding: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      width: 910px;
+      margin: 0 auto;
+    }
+
+    .column {
+      display: inline-block;
+      vertical-align: top;
+      width: 280px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      margin-right: 30px;
+      box-sizing: border-box;
+    }
+
+    .column:nth-child(2) {
+      background-color: #e0f0ff;
+      margin-right: 0;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 5px 0;
+    }
+
+    li:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .signup {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      margin-top: 15px;
+    }
+
+    .signup:visited {
+      color: white;
+    }
+
+    .signup:hover {
+      background-color: #0056b3;
+    }
+
+    .confidence {
+      margin-top: 40px;
+    }
+
+    .confidence ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .confidence li {
+      background: url('checkmark.svg') no-repeat left center;
+      background-size: 24px;
+      padding-left: 36px;
+      margin-bottom: 10px;
+    }
+      </style>
+    </head>
+    <body>
+      <section>
+        <div class="column">
+          <h2>
+            Plan A
+          </h2>
+          <p>
+            Ideal for individuals just getting started.
+          </p>
+          <ul>
+            <li>
+              Basic support
+            </li>
+            <li>
+              1 project
+            </li>
+            <li>
+              Email alerts
+            </li>
+            <li>
+              Community access
+            </li>
+            <li>
+              Limited analytics
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>
+            Plan B
+          </h2>
+          <p>
+            Best for small teams and startups.
+          </p>
+          <ul>
+            <li>
+              Priority support
+            </li>
+            <li>
+              Up to 5 projects
+            </li>
+            <li>
+              SMS & email alerts
+            </li>
+            <li>
+              Extended analytics
+            </li>
+            <li>
+              Team sharing
+            </li>
+          </ul>
+          <a href="#" class="signup">
+            Sign Up
+          </a>
+        </div>
+        <div class="column">
+          <h2>
+            Plan C
+          </h2>
+          <p>
+            Perfect for large businesses with full needs.
+          </p>
+          <ul>
+            <li>
+              24/7 premium support
+            </li>
+            <li>
+              Unlimited projects
+            </li>
+            <li>
+              Advanced alerts
+            </li>
+            <li>
+              Custom reporting
+            </li>
+            <li>
+              Dedicated manager
+            </li>
+          </ul>
+        </div>
+        <div class="confidence">
+          <h2>
+            Why Choose Us?
+          </h2>
+          <ul>
+            <li>
+              Trusted by thousands worldwide
+            </li>
+            <li>
+              99.9% uptime guarantee
+            </li>
+            <li>
+              Secure and scalable
+            </li>
+            <li>
+              Easy integration with tools
+            </li>
+          </ul>
+        </div>
+      </section>
+    </body>
+  </html>
