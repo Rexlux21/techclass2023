@@ -1,0 +1,49 @@
+// 1. Define userName (put your name between the quotes if you want)
+let userName = ''; // e.g., 'Jane'
+
+// 2. Greet the user using a ternary operator
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
+
+// 3. User’s question to the Magic Eight Ball
+let userQuestion = 'Will I get a promotion this year?';
+
+// 4. Log the user’s question (including name if provided)
+console.log(`${userName ? userName : 'User'} asked: ${userQuestion}`);
+
+// 5. Generate random number between 0 and 7
+let randomNumber = Math.floor(Math.random() * 8);
+
+// 6. Create empty variable to hold Magic Eight Ball’s answer
+let eightBall = '';
+
+// 7. Assign answer to eightBall based on randomNumber
+switch (randomNumber) {
+  case 0:
+    eightBall = 'It is certain';
+    break;
+  case 1:
+    eightBall = 'It is decidedly so';
+    break;
+  case 2:
+    eightBall = 'Reply hazy try again';
+    break;
+  case 3:
+    eightBall = 'Cannot predict now';
+    break;
+  case 4:
+    eightBall = 'Do not count on it';
+    break;
+  case 5:
+    eightBall = 'My sources say no';
+    break;
+  case 6:
+    eightBall = 'Outlook not so good';
+    break;
+  case 7:
+    eightBall = 'Signs point to yes';
+    break;
+}
+
+// 8. Log the Magic Eight Ball’s answer
+console.log(`Magic Eight Ball says: ${eightBall}`);
+
