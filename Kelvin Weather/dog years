@@ -1,0 +1,29 @@
+// My current age in human years
+let myAge = 25;
+
+// The first 2 years of a dog's life
+let earlyYears = 2;
+
+// Multiply the early years by 10.5 to convert to dog years
+earlyYears *= 10.5;
+
+// Since the first two years are already counted, subtract 2 from my age
+let laterYears = myAge - 2;
+
+// Each year after the first 2 is equivalent to 4 dog years
+laterYears *= 4;
+
+// Log to check the values
+console.log(`Early years in dog years: ${earlyYears}`);
+console.log(`Later years in dog years: ${laterYears}`);
+
+// Add early and later dog years to get total dog age
+let myAgeInDogYears = earlyYears + laterYears;
+
+// Convert name to lowercase using toLowerCase method
+let myName = "Alex".toLowerCase();
+
+// Display final output using string interpolation
+console.log(
+  `My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`
+);
