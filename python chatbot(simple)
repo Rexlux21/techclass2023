@@ -1,0 +1,8 @@
+
+# welcome message for the user
+print("welcome to MyChatbot . I am a virtual assistant")
+
+
+user_input = input("you: ").lower()
+
+

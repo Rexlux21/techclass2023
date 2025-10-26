@@ -1,0 +1,21 @@
+# this is a simple calculator
+print("welcome to pierre 's calculator")
+num1 = int(input("Enter first number: "))
+op = input("Enter operation (+ - * /): ")
+num2 = int(input ("Enter second number:" ))
+
+
+if op == "+":
+    print("result:", num1 + num2)
+elif op == "-":
+    print("result:", num1 - num2)
+elif op == "*":
+    print("result:", num1 * num2)
+elif op == "/":
+    if num2 == 0:
+        print("can't divide by zero")
+    else:
+        print("result:", num1 / num2)
+else:
+    print("Invalid Operation")
+

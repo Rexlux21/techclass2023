@@ -1,0 +1,12 @@
+import random
+ 
+number = random.randint(1,10)
+
+while True:
+    Guess = int(input(" Welcome Please Guess a number between (1-10): "))
+    if Guess == number:
+        print("correct!")
+        break 
+else:
+    print("Wrong, try again.")
+    
