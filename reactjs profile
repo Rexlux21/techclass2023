@@ -1,0 +1,69 @@
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://react.dev/images/docs/scientists/yXOvdOSs.jpg',
+  imageSize: 90,
+};
+
+export default function Profile() {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
+  );
+}
+
+
+# another example
+
+// This is the reusable template
+function ProfileCard({ person }) {
+  return (
+    <div className="card">
+      <h1>{person.name}</h1>
+      <img
+        src={person.imageUrl}
+        alt={person.name}
+        style={{
+          width: person.imageSize,
+          height: person.imageSize,
+          borderRadius: '50%' // Adding a little style!
+        }}
+      />
+    </div>
+  );
+}
+
+
+Now, in your main App, you can render multiple profiles just by passing the data through a "prop" named person.
+javascript
+export default function Gallery() {
+  const user1 = {
+    name: 'Hedy Lamarr',
+    imageUrl: 'https://react.dev',
+    imageSize: 90,
+  };
+
+  const user2 = {
+    name: 'Gregorio Y. Zara',
+    imageUrl: 'https://imgur.com',
+    imageSize: 90,
+  };
+
+  return (
+    <section>
+      <h1>Amazing Scientists</h1>
+      {/* We pass the data into the prop here */}
+      <ProfileCard person={user1} />
+      <ProfileCard person={user2} />
+    </section>
+  );
+}
