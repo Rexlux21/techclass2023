@@ -1,0 +1,41 @@
+:root {
+  /* ── Ink Wash Dark Theme ── */
+  --color-bg: #0d0d0d;                 /* Deep ink black */
+  --color-surface: rgba(20, 20, 20, 0.6); /* Translucent charcoal */
+  --color-text: #ffffff;               /* Pure paper white */
+  --color-text-muted: rgba(255, 255, 255, 0.6);
+  --color-text-subtle: rgba(255, 255, 255, 0.4);
+
+  /* ── Accent Colors ── */
+  --accent-aqua: #ff2a2a;              /* Bright vermilion red */
+  --accent-violet: #990000;            /* Deep crimson ink */
+  --accent-rose: #ff5e5e;              /* Soft rose wash */
+  --accent-amber: #e6c280;             /* Retained for vintage paper notes */
+  --accent-lime: #ffffff;              /* Crisp white accent */
+
+  /* ── Glass Tints ── */
+  --glass-white: rgba(255, 255, 255, 0.08);
+  --glass-white-md: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="light"] {
+  /* ── Ink Wash Light Theme ── */
+  --color-bg: #f5f4f0;                 /* Rice paper cream */
+  --color-surface: rgba(255, 255, 255, 0.7); /* Clear water wash */
+  --color-text: #1a1a1a;               /* Concentrated black ink */
+  --color-text-muted: rgba(26, 26, 26, 0.65);
+  --color-text-subtle: rgba(26, 26, 26, 0.45);
+
+  /* ── Light Theme Accents (WCAG AA Compliant) ── */
+  --accent-aqua: #cc0000;              /* Bold stamp red */
+  --accent-violet: #800000;            /* Dark maroon */
+  --accent-rose: #b32424;              /* Muted blood red */
+  --accent-amber: #8a6d3b;             /* Aged parchment tone */
+  --accent-lime: #000000;              /* Solid ink black accent */
+
+  /* ── Glass Tints ── */
+  --glass-white: rgba(0, 0, 0, 0.04);
+  --glass-white-md: rgba(0, 0, 0, 0.08);
+  --glass-border: rgba(0, 0, 0, 0.18);
+}
