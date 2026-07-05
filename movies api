@@ -1,0 +1,52 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+const MovieDetailComponent = () => {
+  const [movie, setMovie] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const fetchMovieDetails = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      // Replaces your curl -X GET command layout
+      const response = await axios.get(
+        "https://your-api-url/movie_details.json", 
+        {
+          params: { movie_id: "12345" }
+        }
+      );
+      setMovie(response.data);
+    } catch (err) {
+      console.error("Error pulling movie info:", err);
+      setError("Failed to load movie details.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchMovieDetails();
+  }, []);
+
+  if (loading) return <p>Loading movie content...</p>;
+  if (error) return <p style={{ color: 'red' }}>{error}</p>;
+
+  return (
+    <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
+      {movie ? (
+        <div>
+          <h2>🎬 {movie.title || "Movie Title"}</h2>
+          <p>{movie.description || "No description provided."}</p>
+          {/* Example of displaying a thumbnail */}
+          {movie.thumbnail && <img src={movie.thumbnail} alt="Thumbnail preview" style={{ width: '150px' }} />}
+        </div>
+      ) : (
+        <p>No movie data found.</p>
+      )}
+    </div>
+  );
+};
+
+export default MovieDetailComponent;
