@@ -1,0 +1,62 @@
+import React, {useEffect, useState} from "react"; 
+import { useNavigate } from "react-router-dom";
+import axios from 'axios'
+import { Alert } from "bootstrap";
+  const NotFound = () => {
+  const [dragonBallData, setDragonBallData] = useState([])
+  console.log("🚀 ~ NotFound ~ dragonBallData:", dragonBallData)
+  // the second item update
+  // the first access
+  const navigate = useNavigate();
+  // for axios, you need to use async and await
+  // asyn tells the function to not move on to the next step
+  // unitl this step is done
+  // that why its called async, and await
+  useEffect(()=>{
+    const fetchDragonBall = async () => {
+      // here you can see that i adde async after declaring the variable
+      // this now makes the function have the cap to wait step by step
+      // its like peter giving his kids instruction, 1 by 1
+      // async makes everyone know that this function has the power to make everyone
+      // wait
+    const dataResponse = await axios.get('https://dragonball-api.com/api/characters')
+      // await is what you declare to make a task await
+      // you can even do consle. log await
+      // you can mkae anything you want await
+      // the key thing about await, is that it makes this item pause everything
+      // until it finishes its duty, that's why its called await
+      // meaning WAIT
+      // you can have 20 task inside of a function, but only are await
+      // the others you don't care about, they can run whenever   
+      setDragonBallData(dataResponse.data.items)
+    }
+    fetchDragonBall()
+    
+  })
+
+  return (
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+  {dragonBallData.map((eachItem) => (
+    <button onClick={()=>{
+      window.alert(eachItem.name)
+      window.alert(eachItem.ki)
+      window.alert(eachItem.description)
+      }}>
+    <img 
+      key={eachItem.id} 
+      src={eachItem.image} 
+      style={{ width: '100px', height: 'auto' }}
+    />
+    </button>
+  ))}
+</div>
+  );
+}
+
+
+
+const styles = {
+ 
+};
+
+export default NotFound
