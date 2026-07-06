@@ -1,0 +1,56 @@
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+
+const App = () => {
+  const [homes, setHomes] = useState([]);
+
+  const fetchHomes = async () => {
+    const response = await axios.get("");
+    setHomes(response.data);
+    console.log(response.data);
+  };
+
+  // Fetch homes once on mount
+  useEffect(() => {
+    fetchHomes();
+  }, []);
+
+  return (
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', textAlign: 'center' }}>
+      <h1>My Home pictures</h1>
+      
+      <button 
+        onClick={fetchHomes} 
+        style={{ marginBottom: '20px', padding: '10px 20px', cursor: 'pointer' }}
+      >
+        Refresh Homes
+      </button>
+
+      <div className="btn-group" style={{ marginBottom: '20px' }}>
+        <button>search homes</button>
+        <button style={{ marginLeft: '10px' }}>add homes</button>
+      </div>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+        {homes.map((eachItem) => (
+          <button 
+            key={eachItem.id} 
+            onClick={() => {
+              window.alert(eachItem.title);
+              window.alert(eachItem.price);
+              window.alert(eachItem.type);
+            }}
+          >
+            <img 
+              src={eachItem.image} 
+              alt={eachItem.name} 
+              style={{ width: '100px', height: 'auto' }} 
+            />
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default App;
